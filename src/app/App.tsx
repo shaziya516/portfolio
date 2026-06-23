@@ -31,8 +31,185 @@ import {
   Globe,
 } from "lucide-react";
 
-import { personalInfo, skillCategories, projects, experience, stats } from "./data";
 
+import shaziya from "../assests/profile.jpeg"
+
+import syntaxspace from "../assests/syntaxspace.png"
+import linear_clone from "../assests/linear_clone.png"
+import furniro from "../assests/furniro.png"
+
+import resume from "../assests/shaziya_fullstack_17_06_2026.pdf"
+
+
+export const personalInfo = {
+  name: "Shaziya Malik",
+  title: "Full Stack Developer",
+  tagline:
+    "I craft high-performance, pixel-perfect web applications with the MERN stack — turning complex ideas into elegant digital experiences.",
+  bio: "Passionate Full Stack Developer with hands-on internship experience and strong expertise in React.js, Node.js, MongoDB, and modern UI/UX design. I specialize in crafting clean, responsive interfaces and building robust backend services. From wireframes to deployed products — I own the full cycle.",
+  email: "shaziyamalik8918@gmail.com",
+  phone: "+91 6005387038",
+  location: "India",
+  availability: "Open to Opportunities",
+  social: {
+    github: "https://github.com/shaziya516",
+    linkedin: "https://www.linkedin.com/in/shaziya-malik-b92029360/",
+  },
+  resumeUrl: resume,
+};
+
+export const projects = [
+  {
+    id: 1,
+    title: "SyntaxSpace",
+    description:
+      "A full-stack developer collaboration platform enabling programmers to connect, collaborate, and build projects together. Features real-time communication, live code collaboration, developer networking, and project management powered by Socket.IO and WebRTC.",
+    image: syntaxspace,
+    tags: ["React.js", "Node.js", "MongoDB", "Socket.IO", "WebRTC"],
+    liveUrl: "https://synta-xspace.vercel.app/login",
+    githubUrl: "https://github.com/shaziyamalik",
+    color: "from-violet-500 to-purple-600",
+    accent: "#8b5cf6",
+  },
+  {
+    id: 2,
+    title: "Linear Clone",
+    description:
+      "A modern project management and issue-tracking application inspired by the Linear platform. Offers a clean, intuitive interface for managing tasks, tracking progress, and organizing workflows with a premium user experience.",
+    image: linear_clone,
+    tags: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://linear-clone-psi.vercel.app/",
+    githubUrl: "https://github.com/shaziyamalik",
+    color: "from-blue-500 to-cyan-500",
+    accent: "#3b82f6",
+  },
+  {
+    id: 3,
+    title: "Furniro Furniture Store",
+    description:
+      "A responsive furniture e-commerce website providing a seamless online shopping experience. Features product categorization, search functionality, and modern UI components built with React.js and contemporary frontend technologies.",
+    image: furniro,
+    tags: ["React.js", "CSS3", "Responsive Design", "E-Commerce"],
+    liveUrl: "https://furniro-tau-livid.vercel.app/",
+    githubUrl: "https://github.com/shaziyamalik",
+    color: "from-amber-500 to-orange-500",
+    accent: "#f59e0b",
+  },
+];
+
+export const skillCategories = [
+  {
+    title: "Frontend",
+    icon: "frontend",
+    skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Redux",
+    ],
+  },
+  {
+    title: "Backend & Database",
+    icon: "backend",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful APIs",
+      "Socket.IO",
+      "WebRTC",
+      "JWT Auth",
+      "SQL",
+    ],
+  },
+  {
+    title: "Tools & Design",
+    icon: "tools",
+    skills: [
+      "Git & GitHub",
+      "Figma",
+      "Postman",
+      "VS Code",
+      "Vercel",
+      "Canva",
+      "npm / pnpm",
+    ],
+  },
+];
+
+export const experience = [
+  {
+    period: "Apr 2024 – Sep 2024",
+    role: "Frontend Developer Intern",
+    company: "Techhub Technology",
+    type: "Remote",
+    project: "KrishiNavachar.in",
+    description:
+      "Spearheaded the frontend development for the KrishiNavachar platform, taking ownership of both UI/UX design and code implementation. Designed intuitive user interfaces and translated them into highly responsive web pages using HTML, CSS, and JavaScript. Collaborated closely with the core team to ensure pixel-perfect rendering, optimizing the website structure for cross-browser compatibility and mobile responsiveness.",
+    skills: ["HTML", "CSS", "JavaScript", "UI/UX", "Responsive Design"],
+    color: "from-emerald-500 to-teal-500",
+    accent: "#10b981",
+  },
+  {
+    period: "Jul 2025 – Aug 2025",
+    role: "UI Designer Intern",
+    company: "Techiguru (Partner of Techhub Technology)",
+    type: "Hybrid",
+    project: "Techiguru.in",
+    description:
+      "Contributed to the full-cycle development of the Techiguru educational platform. Created high-fidelity wireframes and modern UI layouts using Figma to establish a consistent design language. Transitioned into development by implementing designs using React.js and TypeScript, building reusable and modular components that significantly improved the application's maintainability and scalability.",
+    skills: ["Figma", "React.js", "TypeScript", "UI Design", "Component Architecture"],
+    color: "from-blue-500 to-indigo-600",
+    accent: "#6366f1",
+  },
+  {
+    period: "Aug 2025",
+    role: "IoT Virtual Intern",
+    company: "IBM Developer Skills Network",
+    type: "Virtual",
+    project: "Smart Home Automation",
+    description:
+      "Successfully completed the Project-Based Experiential Learning (PBEL) program focused on the Internet of Things (IoT). Designed and simulated a comprehensive Smart Home Automation system, applying practical logic for device interconnectivity. Leveraged the IBM Skills Network ecosystem to gain hands-on experience with IoT concepts and architecture.",
+    skills: ["IoT", "IBM Skills Network", "System Design", "Smart Automation"],
+    color: "from-purple-500 to-pink-600",
+    accent: "#a855f7",
+  },
+];
+
+export const timeline = [
+  {
+    year: "2026",
+    role: "Full Stack Developer",
+    company: "Personal Projects & Open Source",
+    description:
+      "Building production-grade full-stack applications with real-time features using MERN stack, Socket.IO, and WebRTC.",
+  },
+  {
+    year: "2025",
+    role: "UI Designer Intern",
+    company: "Techiguru (Partner of Techhub Technology)",
+    description:
+      "Built high-fidelity Figma designs and implemented them with React.js + TypeScript for an educational platform.",
+  },
+  {
+    year: "2024",
+    role: "Frontend Developer Intern",
+    company: "Techhub Technology",
+    description:
+      "Led frontend development for KrishiNavachar.in with pixel-perfect, cross-browser responsive UI.",
+  },
+];
+
+export const stats = [
+  { value: "3+", label: "Projects Shipped" },
+  { value: "3", label: "Internships" },
+  { value: "MERN", label: "Core Stack" },
+  { value: "2+", label: "Years Learning" },
+];
 // ─────────────────────────────────────────────
 //  PARTICLE SYSTEM  (canvas with mouse repulsion)
 // ─────────────────────────────────────────────
@@ -180,12 +357,12 @@ function ShootingStars() {
 // ─────────────────────────────────────────────
 function FloatingGeometry() {
   const shapes = [
-    { size: 220, x: "5%",  y: "15%", delay: 0,   dur: 14, color: "rgba(139,92,246,0.06)",  rotate: 20 },
-    { size: 160, x: "85%", y: "8%",  delay: 2,   dur: 18, color: "rgba(59,130,246,0.07)",  rotate: -15 },
-    { size: 100, x: "70%", y: "50%", delay: 1,   dur: 12, color: "rgba(167,139,250,0.05)", rotate: 45 },
-    { size: 280, x: "15%", y: "65%", delay: 3,   dur: 22, color: "rgba(99,102,241,0.05)",  rotate: -30 },
-    { size: 130, x: "90%", y: "75%", delay: 0.5, dur: 16, color: "rgba(6,182,212,0.06)",   rotate: 60 },
-    { size: 90,  x: "40%", y: "85%", delay: 4,   dur: 10, color: "rgba(139,92,246,0.08)",  rotate: -45 },
+    { size: 220, x: "5%", y: "15%", delay: 0, dur: 14, color: "rgba(139,92,246,0.06)", rotate: 20 },
+    { size: 160, x: "85%", y: "8%", delay: 2, dur: 18, color: "rgba(59,130,246,0.07)", rotate: -15 },
+    { size: 100, x: "70%", y: "50%", delay: 1, dur: 12, color: "rgba(167,139,250,0.05)", rotate: 45 },
+    { size: 280, x: "15%", y: "65%", delay: 3, dur: 22, color: "rgba(99,102,241,0.05)", rotate: -30 },
+    { size: 130, x: "90%", y: "75%", delay: 0.5, dur: 16, color: "rgba(6,182,212,0.06)", rotate: 60 },
+    { size: 90, x: "40%", y: "85%", delay: 4, dur: 10, color: "rgba(139,92,246,0.08)", rotate: -45 },
   ];
 
   return (
@@ -438,11 +615,11 @@ function GlowCard({ children, className = "", accent = "#8b5cf6", hoverGlow = tr
 //  NAV
 // ─────────────────────────────────────────────
 const NAV = [
-  { label: "About",      href: "#about",      icon: User },
+  { label: "About", href: "#about", icon: User },
   { label: "Experience", href: "#experience", icon: Briefcase },
-  { label: "Skills",     href: "#skills",     icon: Code2 },
-  { label: "Projects",   href: "#projects",   icon: Globe },
-  { label: "Contact",    href: "#contact",    icon: Mail },
+  { label: "Skills", href: "#skills", icon: Code2 },
+  { label: "Projects", href: "#projects", icon: Globe },
+  { label: "Contact", href: "#contact", icon: Mail },
 ];
 
 // ═════════════════════════════════════════════
@@ -456,12 +633,12 @@ export default function App() {
   const heroRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll();
-  const heroY       = useTransform(scrollYProgress, [0, 0.4], [0, -160]);
+  const heroY = useTransform(scrollYProgress, [0, 0.4], [0, -160]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.28], [1, 0]);
-  const heroScale   = useTransform(scrollYProgress, [0, 0.3], [1, 1.07]);
-  const bgY1        = useTransform(scrollYProgress, [0, 1], [0, -300]);
-  const bgY2        = useTransform(scrollYProgress, [0, 1], [0, -180]);
-  const bgY3        = useTransform(scrollYProgress, [0, 1], [0, -80]);
+  const heroScale = useTransform(scrollYProgress, [0, 0.3], [1, 1.07]);
+  const bgY1 = useTransform(scrollYProgress, [0, 1], [0, -300]);
+  const bgY2 = useTransform(scrollYProgress, [0, 1], [0, -180]);
+  const bgY3 = useTransform(scrollYProgress, [0, 1], [0, -80]);
 
   useEffect(() => { document.documentElement.classList.add("dark"); }, []);
 
@@ -492,8 +669,10 @@ export default function App() {
         className="fixed pointer-events-none z-50 hidden lg:block"
         animate={{ x: cursorPos.x - 250, y: cursorPos.y - 250 }}
         transition={{ type: "spring", stiffness: 60, damping: 22 }}
-        style={{ width: 500, height: 500, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 70%)" }}
+        style={{
+          width: 500, height: 500, borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 70%)"
+        }}
       />
 
       {/* ─── Layered Aurora (parallax) ─── */}
@@ -535,9 +714,8 @@ export default function App() {
       <FloatingGeometry />
 
       {/* ══════════════ NAVBAR ══════════════ */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-[#030711]/85 backdrop-blur-2xl border-b border-white/5 shadow-2xl shadow-black/30" : "bg-transparent"
-      }`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-[#030711]/85 backdrop-blur-2xl border-b border-white/5 shadow-2xl shadow-black/30" : "bg-transparent"
+        }`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#" className="flex items-center gap-2.5 font-black text-xl tracking-tight group">
             <motion.div
@@ -552,8 +730,7 @@ export default function App() {
           <nav className="hidden md:flex items-center gap-1">
             {NAV.map((l) => (
               <a key={l.href} href={l.href}
-                className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
-                  activeSection === l.href.substring(1) ? "text-white" : "text-white/45 hover:text-white/85"}`}>
+                className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${activeSection === l.href.substring(1) ? "text-white" : "text-white/45 hover:text-white/85"}`}>
                 {activeSection === l.href.substring(1) && (
                   <motion.span layoutId="pill"
                     className="absolute inset-0 bg-white/8 border border-white/10 rounded-xl"
@@ -565,7 +742,7 @@ export default function App() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <a href={personalInfo.resumeUrl} target="_blank" rel="noopener noreferrer"
+            <a href={personalInfo.resumeUrl}
               className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow-lg shadow-violet-500/25 hover:shadow-violet-500/50 transition-all hover:scale-[1.04]">
               <Download size={14} /> Resume
             </a>
@@ -584,15 +761,14 @@ export default function App() {
               <div className="p-4 flex flex-col gap-1">
                 {NAV.map((l) => (
                   <a key={l.href} href={l.href}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                      activeSection === l.href.substring(1)
-                        ? "bg-violet-500/15 text-violet-300 border border-violet-500/20"
-                        : "text-white/45 hover:bg-white/5 hover:text-white/85"}`}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${activeSection === l.href.substring(1)
+                      ? "bg-violet-500/15 text-violet-300 border border-violet-500/20"
+                      : "text-white/45 hover:bg-white/5 hover:text-white/85"}`}
                     onClick={() => setMenuOpen(false)}>
                     <l.icon size={15} /> {l.label}
                   </a>
                 ))}
-                <a href={personalInfo.resumeUrl} target="_blank" rel="noopener noreferrer"
+                <a href={personalInfo.resumeUrl} download="shaziya_fullstack_17_06_2026.pdf"
                   className="flex items-center justify-center gap-2 mt-2 bg-gradient-to-r from-violet-600 to-blue-600 text-white px-4 py-3 rounded-xl text-sm font-bold">
                   <Download size={14} /> Download Resume
                 </a>
@@ -693,12 +869,12 @@ export default function App() {
 
         {/* Floating tech badges */}
         {[
-          { label: "</> React",   color: "#61dafb", x: "10%",  y: "28%", d: 0.7  },
-          { label: "⚡ Node.js",  color: "#8cc84b", x: "80%",  y: "22%", d: 0.9  },
-          { label: "🍃 MongoDB",  color: "#4db33d", x: "7%",   y: "62%", d: 1.1  },
-          { label: "⚙️ Express", color: "#fff",    x: "76%",  y: "66%", d: 0.85 },
-          { label: "🎨 Figma",   color: "#f24e1e", x: "83%",  y: "44%", d: 1.0  },
-          { label: "💻 Next.js", color: "#fff",    x: "3%",   y: "44%", d: 1.3  },
+          { label: "</> React", color: "#61dafb", x: "10%", y: "28%", d: 0.7 },
+          { label: "⚡ Node.js", color: "#8cc84b", x: "80%", y: "22%", d: 0.9 },
+          { label: "🍃 MongoDB", color: "#4db33d", x: "7%", y: "62%", d: 1.1 },
+          { label: "⚙️ Express", color: "#fff", x: "76%", y: "66%", d: 0.85 },
+          { label: "🎨 Figma", color: "#f24e1e", x: "83%", y: "44%", d: 1.0 },
+          { label: "💻 Next.js", color: "#fff", x: "3%", y: "44%", d: 1.3 },
         ].map((b, i) => (
           <motion.div key={i} initial={{ opacity: 0, scale: 0.4 }} animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: b.d }}
@@ -738,7 +914,7 @@ export default function App() {
                     className="absolute -inset-8 rounded-full opacity-25"
                     style={{ background: "conic-gradient(from 180deg, #a855f7, transparent, #3b82f6, transparent, #a855f7)" }} />
                   <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-violet-500/30 shadow-2xl shadow-violet-500/25">
-                    <img src="/src/assests/profile.jpeg" alt="Shaziya Malik" className="w-full h-full object-cover object-center" />
+                    <img src={shaziya} alt="Shaziya Malik" className="w-full h-full object-cover object-center" />
                     <div className="absolute inset-0 rounded-full" style={{ background: "radial-gradient(circle at 30% 20%, rgba(139,92,246,0.15), transparent 60%)" }} />
                   </div>
                   <motion.div animate={{ y: [-6, 6, -6] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
