@@ -47,8 +47,8 @@ export const personalInfo = {
   tagline:
     "I craft high-performance, pixel-perfect web applications with the MERN stack — turning complex ideas into elegant digital experiences.",
   bio: "Passionate Full Stack Developer with hands-on internship experience and strong expertise in React.js, Node.js, MongoDB, and modern UI/UX design. I specialize in crafting clean, responsive interfaces and building robust backend services. From wireframes to deployed products — I own the full cycle.",
-  email: "shaziyamalik8918@gmail.com",
-  phone: "+91 6005387038",
+  email: "shaziya01122004@gmail.com",
+  phone: "+91 9456635076",
   location: "India",
   availability: "Open to Opportunities",
   social: {
